@@ -10,6 +10,7 @@ import (
 // Calc evaluates a mathematical expression provided as a string and returns the result or an error if invalid.
 func Calc(expression string) (float64, error) {
 	nums := []float64{}
+
 	ops := []rune{}
 
 	for i := 0; i < len(expression); i++ {
